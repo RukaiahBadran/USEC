@@ -20,12 +20,20 @@ for question in ['USE', 'UNDERSTANING', 'RATING', 'MALICIOUS']:
     plt.show()
 
 # Chi analysis
-clean['MaliciousBinary'] = clean['MALICIOUS'].replace({'No': 0, 'Yes': 1})
 
-clean['EaseOfUse'] = clean['USE'].factorize()[0]
-clean['EaseOfUnderstand'] = clean['UNDERSTANING'].factorize()[0]
-clean['AppRating'] = clean['RATING'].factorize()[0]
 
+response_mapping = {
+    'Strongly Disagree': 1,
+    'Disagree': 2,
+    'Neutral': 3,
+    'Agree': 4,
+    'Strongly Agree': 5
+}
+
+clean['EaseOfUse'] = clean['USE'].astype(str)
+clean['EaseOfUnderstand'] = clean['UNDERSTANING'].astype(str)
+clean['AppRating'] = clean['RATING'].astype(str)
+clean['MaliciousBinary'] = clean['MALICIOUS'].astype(str)
 
 hypotheses = [
     ('EaseOfUnderstand', 'MaliciousBinary'),
