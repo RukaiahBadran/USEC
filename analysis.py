@@ -14,7 +14,7 @@ questions = ['USE', 'UNDERSTANING', 'RATING', 'MALICIOUS']
 
 for question in ['USE', 'UNDERSTANING', 'RATING', 'MALICIOUS']:
     plt.figure(figsize=(8, 5))
-    sns.countplot(data=clean, x=question)
+    sns.countplot(data=clean, x=question, palette='Set3')
     plt.title(f'Response Distribution for: {question}')
     plt.xticks(rotation=45)
     plt.show()
