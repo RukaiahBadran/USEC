@@ -24,23 +24,25 @@ And plot and chi squared analysis the survey data in according to the coursework
 
 
 Hypothesis: EaseOfUnderstand vs MaliciousBinary
-Chi-square value: 4.426870556794211, p-value: 0.21890675869958354
-Degrees of freedom: 3
+Chi-square value: 4.42383065951599, p-value: 0.3516749756356293
+Degrees of freedom: 4
 Expected frequencies:
-[[  7.77272727   1.22727273]
- [ 35.40909091   5.59090909]
- [114.          18.        ]
- [ 32.81818182   5.18181818]]
+[[113.97356828  18.02643172]
+ [  7.77092511   1.22907489]
+ [ 35.40088106   5.59911894]
+ [ 32.81057269   5.18942731]
+ [  6.04405286   0.95594714]]
 
 --------------------------------------------------
 Hypothesis: EaseOfUse vs MaliciousBinary
-Chi-square value: 0.21974491501145893, p-value: 0.9743405594886153
-Degrees of freedom: 3
+Chi-square value: 0.39228752770483966, p-value: 0.9831034634195759
+Degrees of freedom: 4
 Expected frequencies:
-[[  6.05405405   0.94594595]
- [ 30.27027027   4.72972973]
- [117.62162162  18.37837838]
- [ 38.05405405   5.94594595]]
+[[117.42731278  18.57268722]
+ [  6.04405286   0.95594714]
+ [ 30.22026432   4.77973568]
+ [ 37.99118943   6.00881057]
+ [  4.31718062   0.68281938]]
 
 --------------------------------------------------
 Hypothesis: AppRating vs MaliciousBinary
